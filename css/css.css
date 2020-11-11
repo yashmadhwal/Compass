@@ -1,6 +1,6 @@
-/* *{
+*{
     border: 1px solid;
-} */
+}
 
 body{
     margin: 0px;
@@ -11,6 +11,10 @@ section{
     width: 100%;
     height: 42.4vw;
     position: relative;
+}
+
+.SectionPage{
+    height: 100vh;
 }
 
 .textCenter{
@@ -161,9 +165,11 @@ section{
 
     .TeamMembers{
         width: 20vw;
-        height: 22vw;
+        height: 23vw;
         margin-top: 6vw;
         margin-bottom: 3vw;
+        display: block;
+        background: rgb(196,196,196,0.4);
     }
         #TeamContent{
             display: flex;
@@ -178,6 +184,18 @@ section{
             border-radius: 4vw;
             z-index: 5;
             
+        }
+
+        .TeamName{
+            font-weight: bold;
+            text-align: center;
+            transform: translate(0%, -160%);
+        }
+
+        .MemberDiscription{
+            text-align: center;
+            transform: translate(0%, -11%);
+            font-size: 1.3vw;
         }
 
         #TeamIcon-1{background:url(../images/team_member.png);
@@ -196,4 +214,73 @@ section{
         #TeamIcon-4{background:url(../images/team_member.png);
             background-repeat:no-repeat;
             background-size: 100% auto;
+            }
+
+
+/* Contact Us */
+#ContactUs{
+    background-color: whitesmoke;
+}
+
+#ContactUsArea{
+    width: 90%;
+}
+
+#ContactUsContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+    .ContactUsSubElement{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        width: 33%;
+        height: 30vw;
+        background-color: rgba(196, 196, 196, 0.2);
+    }
+
+
+        /* Write to Us */
+        #WriteToUS{
+            height: 20%;
+        }
+
+        #ResponseForm{
+            height: 80%;
+        }
+
+        .classForm{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+            #FormName{
+                height: 20%;
+            }
+
+            #FormNameId{
+                width: 80%;
+                height: 65%;
+            }
+
+            #FormNumber{
+                height: 20%;
+            }
+
+            #FormNumberId{
+                width: 80%;
+                height: 65%;
+            }
+
+            #FormText{
+                height: 40%;
+            }
+
+            #FormTextId{
+                width: 80%;
+                height: 75%;
+            }
+
+            #FormButton{
+                height: 20%;
             }

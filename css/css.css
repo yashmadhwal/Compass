@@ -1,6 +1,6 @@
-/* *{
+*{
     border: 1px solid;
-} */
+}
 
 .test{
     border: 1px solid;
@@ -239,6 +239,7 @@ section{
 }
 
     .ContactUsSubElement{
+        position: relative;
         margin-top: 3vw;
         margin-bottom: 3vw;
         width: 33%;
@@ -246,26 +247,27 @@ section{
         background-color: rgba(196, 196, 196, 0.2);
         border-radius: 1vw;
     }
-
-        /* Find Us*/
-        h4{
-            font-size: 1.21vw;
-            width: 20%;
-            margin: auto;
-            margin-top: 2.27vw;
-            text-align: center;
-        }
-
-        #findUsInfo{
-            height: 18.63vw;
-            width: 16.21vw;
-            margin: auto;
-            margin-top: 2.27vw;
+    
+    /* Find Us*/
+    h4{
+        font-size: 1.21vw;
+        width: 20%;
+        margin: auto;
+        margin-top: 2.27vw;
+        text-align: center;
+    }
+    
+    #findUsInfo{
+        height: 18.63vw;
+        width: 16.21vw;
+        margin: auto;
+        margin-top: 2.27vw;
+        position: relative;
         }
         
         .FindUsIconDisplay{
             display: flex;
-            justify-content: space-around;
+            /* justify-content: space-between; */
 
         }
         .icon{
@@ -285,16 +287,28 @@ section{
 
         #address{
             margin-top:1.96vw;
+            /* height: 3.18vw; */
         }
 
         #phone{
+            height: 3.18vw;
             margin-top:1.96vw;
         }
 
         #findUsSocialMedia{
-            margin-top: 1.96vw;
+            justify-content: space-between;
+            /* margin-top: 1.96vw; */
+            position: absolute;
+            bottom: 0;
         }
 
+        
+        #Greybox{
+            width: 90%;
+            margin: auto;
+            margin-top: 2vw;
+            height: 2vw;
+        }
 
         /* Write to Us */
         #WriteToUS{
@@ -354,4 +368,3 @@ section{
             }
 
 
-/* ONLINE CSS */

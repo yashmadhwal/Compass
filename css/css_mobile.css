@@ -1,0 +1,159 @@
+@media (max-width: 575.98px){
+
+.sectionHeading{
+    height: 5vh;
+    font-size: 4vh;
+}
+
+/* Contact Us */
+
+#ContactUsArea{
+    width: 90%;
+    height: 90vh;
+}
+
+#ContactUsContent{
+    height: 85vh;
+    display: block;
+}
+
+    .ContactUsSubElement{
+        position: relative;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        margin: auto;
+        width: 90%;
+        height: 28vh;
+        background-color: rgba(196, 196, 196, 0.2);
+        border-radius: 1vw;
+    }
+
+
+    #inneriframe{
+        /* position: absolute; */
+        /* top: -10px; */
+        left: 4.3vw;
+        /* width: 100%;
+        height: 100%; */
+      }
+
+    /* Find Us*/
+    h4{
+        font-size: 2vh;
+        width: 90%;
+        margin: auto;
+        margin-top: 2.27vw;
+        text-align: center;
+    }
+    
+    #findUsInfo{
+        height: 23vh;
+        width: 90%;
+        margin: auto;
+        margin-top: 1vh;
+        position: relative;
+        }
+        
+        .FindUsIconDisplay{
+            display: flex;
+            /* justify-content: space-between; */
+
+        }
+        .icon{
+            height: 2.5vh;
+            width: 2.5vh;
+        }
+
+        .marginfindus{
+            font-size:2vh;
+            margin-left: 2.27vw;
+        }
+
+        #email{
+            
+        }
+
+        #address{
+            margin-top:1.96vh;
+            /* height: 3.18vw; */
+        }
+
+        #phone{
+            margin-top:1.96vh;
+            height: 3.18vw;
+        }
+
+        .SMicon{
+            justify-content: space-around;
+        }
+        #findUsSocialMedia{
+            /* justify-content: space-between; */
+            /* margin-top: 1.96vw; */
+            position: absolute;
+            bottom: 0;
+        }
+
+
+        
+        #Greybox{
+            display: none;
+        }
+
+        /* Write to Us */
+        #WriteToUS{
+            height: 6vw;
+        }
+
+        #FormArea{
+            height: 24vw;
+            text-align:center; 
+            vertical-align:middle;
+        }
+
+        #ResponseForm{
+            height: 24vw;
+        }
+
+        .classForm{
+
+            margin-left: 10%;
+            margin-right: 10%;
+            
+        }
+
+            #FormName{
+                height: 20%;
+            }
+
+            #FormNameId{
+                width: 80%;
+                /* height: 80%; */
+                
+            }
+
+            #FormNumber{
+                height: 6vw;
+            }
+
+            #FormNumberId{
+                width: 80%;
+                display: inline-block;
+                vertical-align: middle;
+                /* height: 80%; */
+            }
+
+            #FormText{
+                height: 6vw;
+            }
+
+            #FormTextId{
+                width: 80%;
+                vertical-align: middle;
+                /* height: 80%; */
+            }
+
+            #FormButton{
+                height: 6vw;
+            }
+
+}

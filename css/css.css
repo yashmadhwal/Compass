@@ -1,6 +1,7 @@
-/* *{
-    border: 1px solid;
-} */
+*{
+    /* border: 1px solid; */
+    font: Roboto;
+}
 
 .test{
     border: 1px solid;
@@ -334,34 +335,55 @@ section{
 
 
             #FormNameId{
-                width: 80%;
-                height: 80%;
+                width: 90%;
+                height: 3.333vw;
+                margin: auto;
+                padding-left: 1vw;
                 
             }
 
-            #FormNumber{
-                height: 6vw;
-            }
-
             #FormNumberId{
-                width: 80%;
-                display: inline-block;
-                vertical-align: middle;
-                /* height: 80%; */
-            }
-
-            #FormText{
-                height: 6vw;
+                width: 90%;
+                height: 3.333vw;
+                margin: auto;
+                padding-left: 1vw;
             }
 
             #FormTextId{
+                width: 90%;
+                margin: auto;
+                height: 8.33vw;
+                padding-left: 1vw;
+                top: 0;
+            }
+            button:focus { outline: none; }
+
+            #buttonId{
+                font-size: 1.439vw;
+                color: white;
                 width: 80%;
-                vertical-align: middle;
-                /* height: 80%; */
+                margin: auto;
+                height: 3.63vw;
+                border-radius: 5vw;
+                background: linear-gradient(94.32deg, #002FA8 -6.63%, #336BFB 96.44%);
             }
 
-            #FormButton{
-                height: 6vw;
+            /* Footer */
+
+            #Footer{
+                height: 4vw;
+                width: 100%;
+                border-top: 1px solid;
+                position: absolute;
+                bottom: 0px;
+                display: flex;
+                justify-content: space-between;
             }
-
-
+            
+            .footerContent{
+            font-size: 1vw;
+            margin-top: 1.5vw;
+            margin-left: 1.5vw;
+            margin-right: 1.5vw;
+            vertical-align: middle;
+        }

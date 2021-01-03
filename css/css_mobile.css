@@ -152,4 +152,79 @@
                 height: 6vw;
             }
 
+        /* Write to Us */
+        #WriteToUS{
+            height: 6vw;
+        }
+
+        #FormArea{
+            margin-top: 1.74vw;
+            text-align:center; 
+            vertical-align:middle;
+        }
+
+        #ResponseForm{
+            height: 24vw;
+        }
+
+        .classForm{
+
+            margin-left: 10%;
+            margin-right: 10%;
+            
+        }
+
+
+            #FormNameId{
+                width: 90%;
+                height: 3.333vh;
+                margin: auto;
+                padding-left: 1vw;
+                
+            }
+
+            #FormNumberId{
+                width: 90%;
+                height: 3.333vh;
+                margin: auto;
+                padding-left: 1vw;
+            }
+
+            #FormTextId{
+                width: 90%;
+                margin: auto;
+                height: 8.33vh;
+                padding-left: 1vw;
+                top: 0;
+            }
+            button:focus { outline: none; }
+
+            #buttonId{
+                font-size: 1.439vh;
+                color: white;
+                width: 80%;
+                margin: auto;
+                height: 3.63vh;
+                border-radius: 5vw;
+                background: linear-gradient(94.32deg, #002FA8 -6.63%, #336BFB 96.44%);
+            }
+
+            /* Footer */
+
+            #Footer{
+                height: 2vh;
+                width: 100%;
+                border-top: 1px solid;
+                position: absolute;
+                bottom: 0px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .footerContent{
+                font-size: 1vh;
+                margin-top: 0.5vh;
+                margin-left: 0.5vh;
+                margin-right: 0.5vh;
+                vertical-align: middle;
+            }
 }

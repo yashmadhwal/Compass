@@ -1,6 +1,6 @@
-*{
+/* *{
     border: 1px solid;
-}
+} */
 
 .test{
     border: 1px solid;
@@ -251,7 +251,7 @@ section{
     /* Find Us*/
     h4{
         font-size: 1.21vw;
-        width: 20%;
+        width: 30%;
         margin: auto;
         margin-top: 2.27vw;
         text-align: center;
@@ -271,8 +271,8 @@ section{
 
         }
         .icon{
-            height: 1.51vw;
-            width: 1.51vw;
+            height: 2vw;
+            width: 2vw;
 
         }
 
@@ -297,8 +297,8 @@ section{
 
         #findUsSocialMedia{
             justify-content: space-between;
-            /* margin-top: 1.96vw; */
-            position: absolute;
+            margin-top: 2vh;
+            /* position: absolute; */
             bottom: 0;
         }
 
@@ -316,7 +316,7 @@ section{
         }
 
         #FormArea{
-            height: 24vw;
+            margin-top: 1.74vw;
             text-align:center; 
             vertical-align:middle;
         }
@@ -332,13 +332,10 @@ section{
             
         }
 
-            #FormName{
-                height: 20%;
-            }
 
             #FormNameId{
                 width: 80%;
-                /* height: 80%; */
+                height: 80%;
                 
             }
 

@@ -58,12 +58,12 @@ section{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-    
+
     }
 
 /* HeroPage */
 #HeroPage{
-    background: url('/images/heropage.jpg') no-repeat fixed;;
+    background: url('images/heropage.jpg') no-repeat fixed;;
     background-repeat:no-repeat;
     background-size: 100% auto;
 }
@@ -76,10 +76,10 @@ section{
         height: 3vw;
         display: flex;
         background-color: rgb(0,0,0,0.4);
-        
+
     }
-    
-        #logoArea{  
+
+        #logoArea{
             width: 35%;
         }
 
@@ -96,7 +96,7 @@ section{
             display: flex;
             justify-content: center;
             justify-content: space-around;
-            width: 65%;  
+            width: 65%;
             right: 0;
         }
 
@@ -126,15 +126,15 @@ section{
         text-align: center;
         font-family: Roboto;
         font-style: normal;
-        
+
     }
         #HeroContect-1{
             font-size: 4vw;
-            letter-spacing: 2vw; 
+            letter-spacing: 2vw;
         }
         #HeroContect-2{
             font-size: 1vw;
-            letter-spacing: 1vw; 
+            letter-spacing: 1vw;
         }
 
 /* About Us */
@@ -157,7 +157,7 @@ section{
     }
 
         #AboutUsHeading{
-           
+
         }
 
         #AboutUsContent{
@@ -192,7 +192,7 @@ section{
             transform: translate(0%, -50%);
             border-radius: 4vw;
             z-index: 5;
-            
+
         }
 
         .TeamName{
@@ -248,7 +248,7 @@ section{
         background-color: rgba(196, 196, 196, 0.2);
         border-radius: 1vw;
     }
-    
+
     /* Find Us*/
     h4{
         font-size: 1.21vw;
@@ -257,7 +257,7 @@ section{
         margin-top: 2.27vw;
         text-align: center;
     }
-    
+
     #findUsInfo{
         height: 18.63vw;
         width: 16.21vw;
@@ -265,7 +265,7 @@ section{
         margin-top: 2.27vw;
         position: relative;
         }
-        
+
         .FindUsIconDisplay{
             display: flex;
             /* justify-content: space-between; */
@@ -283,7 +283,7 @@ section{
         }
 
         #email{
-            
+
         }
 
         #address{
@@ -291,7 +291,7 @@ section{
             /* height: 3.18vw; */
         }
 
-        #phone{
+        #nonFormPhone{
             height: 3.18vw;
             margin-top:1.96vw;
         }
@@ -303,7 +303,7 @@ section{
             bottom: 0;
         }
 
-        
+
         #Greybox{
             width: 90%;
             margin: auto;
@@ -318,7 +318,7 @@ section{
 
         #FormArea{
             margin-top: 1.74vw;
-            text-align:center; 
+            text-align:center;
             vertical-align:middle;
         }
 
@@ -330,32 +330,37 @@ section{
 
             margin-left: 10%;
             margin-right: 10%;
-            
+
+        }
+
+        .ResponseRecorded{
+            display: none;
         }
 
 
-            #FormNameId{
+            #name{
                 width: 90%;
                 height: 3.333vw;
                 margin: auto;
                 padding-left: 1vw;
-                
+
             }
 
-            #FormNumberId{
+            #phone{
                 width: 90%;
                 height: 3.333vw;
                 margin: auto;
                 padding-left: 1vw;
             }
 
-            #FormTextId{
+            #text{
                 width: 90%;
                 margin: auto;
                 height: 8.33vw;
                 padding-left: 1vw;
                 top: 0;
             }
+
             button:focus { outline: none; }
 
             #buttonId{
@@ -363,9 +368,15 @@ section{
                 color: white;
                 width: 80%;
                 margin: auto;
+                margin-top: 1.15vw;
                 height: 3.63vw;
                 border-radius: 5vw;
+                border: none;
                 background: linear-gradient(94.32deg, #002FA8 -6.63%, #336BFB 96.44%);
+            }
+
+            #buttonId:hover{
+                cursor: pointer;
             }
 
             /* Footer */
@@ -379,7 +390,7 @@ section{
                 display: flex;
                 justify-content: space-between;
             }
-            
+
             .footerContent{
             font-size: 1vw;
             margin-top: 1.5vw;

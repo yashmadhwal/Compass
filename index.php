@@ -1,3 +1,45 @@
+
+<?php
+$insert = false;
+if(isset($_POST['name'])){
+    // Creating Server
+    $server = "localhost";
+    $username = 'root';
+    $password = '';
+
+    // Making connection
+     $con = mysqli_connect($server, $username,$password);
+
+     if(!$con){
+         die("Connection Failed" .mysqli_connect_error());
+     }
+
+     //Declaring Variables
+     $name = $_POST['name'];
+     $phone = $_POST['phone'];
+     $text = $_POST['text'];
+     $responded = 0;
+
+     //Inserting into database
+    $sql = "INSERT INTO `compass`.`response` (`name`, `phone`, `text`, `time`, `responded`) VALUES ('$name', '$phone', '$text', current_timestamp(), '$responded');";
+
+
+
+    if($con->query($sql) == true){
+        // echo "Successfully inserted";
+
+        // Flag for successful insertion
+        $insert = true;
+    }
+    else{
+        echo "ERROR: $sql <br> $con->error";
+    }
+
+    // Close the database connection
+    $con->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -149,8 +191,8 @@
 
                         <!-- Find Us: phone -->
                         <div id="findUsPhone" class="FindUsIconDisplay">
-                            <img src='/images/Icons/icons8-call-50.png' class="icon" style='margin-top:1.96vw;'>
-                            <div id="nonFormPhone" class="marginfindus">
+                            <img src='./images/Icons/icons8-call-50.png' class="icon" style='margin-top:1.96vw;'>
+                            <div id="phone" class="marginfindus">
                                 <b>
                                     <a href="tel:007999999999"
                                         style='color:black; text-decoration: none;'>+7(999)-999-99-99</a><br>
@@ -163,11 +205,11 @@
                         <!-- Find Us: SocialMedia -->
                         <div id="findUsSocialMedia" class="FindUsIconDisplay">
 
-                            <img src='/images/Icons/icons8-whatsapp-50.png' class="SMicon icon">
-                            <img src='/images/Icons/icons8-telegram-app-50.png' class="SMicon icon">
-                            <img src='/images/Icons/icons8-vk.com-50.png' class="SMicon icon">
-                            <img src='/images/Icons/icons8-odnoklassniki-50.png' class="SMicon icon">
-                            <img src='/images/Icons/icons8-viber-50.png' class="SMicon icon">
+                            <img src='images/Icons/icons8-whatsapp-50.png' class="SMicon icon">
+                            <img src='images/Icons/icons8-telegram-app-50.png' class="SMicon icon">
+                            <img src='images/Icons/icons8-vk.com-50.png' class="SMicon icon">
+                            <img src='images/Icons/icons8-odnoklassniki-50.png' class="SMicon icon">
+                            <img src='images/Icons/icons8-viber-50.png' class="SMicon icon">
 
                         </div>
                     </div>
@@ -183,23 +225,23 @@
                         </h4>
                         <div id='FormArea' class=''>
 
-                            <form action="/index.php" method="POST" class='' id="">
-                                <!-- Name Input -->
-  
-                                <input type="text" name="name" required="required"  id="name" class='classForm' placeholder='NAME'>
-  
-                                <!-- Number Input -->
-  
-                                <input type="text" name="phone" required="required" id="phone" class='classForm' placeholder=+7(999)999-99-99 style="margin-top: 1.15vw;">
-  
-                                <!-- Write Message -->
-  
-                                <input type="text" name="text" id="text" class='classForm' placeholder='TEXT' style='margin-top: 1.15vw;'>
-  
-                                <!-- button -->
-                                <button id="buttonId" class='classForm'> Send </button>
-                                <!-- <button id="buttonId" class="classForm">Submit</button> -->
-                            </form>
+                          <form action="index.php" method="POST" class='' id="">
+                              <!-- Name Input -->
+
+                              <input type="text" name="name" required="required"  id="name" class='classForm' placeholder='NAME'>
+
+                              <!-- Number Input -->
+
+                              <input type="text" name="phone" required="required" id="phone" class='classForm' placeholder=+7(999)999-99-99 style="margin-top: 1.15vw;">
+
+                              <!-- Write Message -->
+
+                              <input type="text" name="text" id="text" class='classForm' placeholder='TEXT' style='margin-top: 1.15vw;'>
+
+                              <!-- button -->
+                              <button type='button' id="buttonId" class='classForm'> Send </button>
+                              <!-- <button id="buttonId" class="classForm">Submit</button> -->
+                          </form>
                         </div>
                     </div>
                     <div class="ResponseRecorded" style='position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); color:green; width:100%;' >

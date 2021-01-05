@@ -63,7 +63,7 @@ section{
 
 /* HeroPage */
 #HeroPage{
-    background: url('images/heropage.jpg') no-repeat fixed;;
+    background: url('../images/heropage.jpg') no-repeat fixed;;
     background-repeat:no-repeat;
     background-size: 100% auto;
 }

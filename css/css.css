@@ -13,7 +13,7 @@
 
 body{
     margin: 0px;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
 }
 
 section{
@@ -41,10 +41,24 @@ section{
     justify-content: center;
     letter-spacing: 0.05em;
     color: white;
-    width: 10vw;
-    height: 2.3vw;
+    width: 150px;
+    height: 40px;
     border-radius: 2vw;
+    font-size: 15px;
 }
+
+/* Navigation Content Hover */
+.NacDecor:hover{
+    cursor: pointer;
+    /* background: linear-gradient(94.32deg, #002FA8 -6.63%, #336BFB 96.44%); */
+    background-color:rgba(0, 0, 0, 0.2);
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 2vw;
+    padding: 0;
+}
+
 
 .sectionHeading{
     text-align: center;
@@ -73,7 +87,7 @@ section{
         position: fixed;
         top: 0;
         width: 100%;
-        height: 3vw;
+        height: 50px;
         display: flex;
         background-color: rgb(0,0,0,0.4);
 
@@ -86,8 +100,8 @@ section{
         #logo{
             margin-left: 1vw;
             z-index: 100;
-            height: 3vw;
-            width: 3vw;
+            height: 40px;
+            width: 40px;
             background: url(images/logo.png);
             overflow: hidden
         }
@@ -99,18 +113,6 @@ section{
             width: 65%;
             right: 0;
         }
-
-            /* Navigation Content Hover */
-            .NacDecor:hover{
-                cursor: pointer;
-                /* background: linear-gradient(94.32deg, #002FA8 -6.63%, #336BFB 96.44%); */
-                background-color:rgba(0, 0, 0, 0.2);
-                width: 10vw;
-                height: 2.3vw;
-                justify-content: center;
-                border-radius: 2vw;
-                padding: 0;
-            }
 
             #NavDownloads{
                 background: linear-gradient(94.32deg, #002FA8 -6.63%, #336BFB 96.44%);
@@ -126,6 +128,7 @@ section{
         text-align: center;
         font-family: Roboto;
         font-style: normal;
+        width:100%;
 
     }
         #HeroContect-1{
@@ -398,3 +401,50 @@ section{
             margin-right: 1.5vw;
             vertical-align: middle;
         }
+
+@media(max-width: 600px){
+ section{
+    height:100vh;
+}
+
+.sectionHeading{
+    font-size: 40px;
+}
+
+/* Navigation */
+#logoArea{
+    display: none;
+}
+
+#HeroPage{
+    background: url('../images/Icons/mobile_wallpaper.png') no-repeat fixed;;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+#HeroContent{
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -75%);
+}
+#HeroContect-1{
+    font-size: 35px;
+}
+
+#HeroContect-2{
+    font-size: 15px;
+}
+
+#NavContent{
+    display: block;
+}
+
+/* About Us */
+#AboutUsArea{
+    width:80%;
+}
+
+}
